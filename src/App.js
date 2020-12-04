@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ItarUsers from "./ItarUsers";
 
 class App extends Component {
     users = [
@@ -18,7 +19,7 @@ class App extends Component {
             <div>
                 {
                     this.users.map((user)=>{
-                        return (<Itar_Users item={user}/>)
+                        return (<ItarUsers item={user}/>)
                     })
                 }
             </div>
