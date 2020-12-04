@@ -1,0 +1,9 @@
+.one{
+    display: flex;
+    justify-content: space-around;
+
+}
+span{
+    font-size: 30px;
+    font-weight: bold;
+}
