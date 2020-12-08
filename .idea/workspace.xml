@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="36e7d6e1-64f5-4f53-8f82-404b154f4afe" name="Default Changelist" comment="homework-3 done" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="homework-3_04-12-20" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lAURHnj2ZaAMw1sqBGXXtdfqcj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../practical-2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/component/Users" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36e7d6e1-64f5-4f53-8f82-404b154f4afe" name="Default Changelist" comment="" />
+      <created>1607039394095</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607039394095</updated>
+      <workItem from="1607039405259" duration="678000" />
+      <workItem from="1607040138526" duration="2543000" />
+      <workItem from="1607092042913" duration="3291000" />
+      <workItem from="1607356704265" duration="4969000" />
+      <workItem from="1607444419642" duration="1444000" />
+      <workItem from="1607446236086" duration="192000" />
+      <workItem from="1607446845539" duration="5693000" />
+    </task>
+    <task id="LOCAL-00001" summary="clear">
+      <created>1607039569877</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607039569877</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit">
+      <created>1607039682934</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607039682934</updated>
+    </task>
+    <task id="LOCAL-00003" summary="homework-1 done">
+      <created>1607040241283</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607040241283</updated>
+    </task>
+    <task id="LOCAL-00004" summary="homework-2 done">
+      <created>1607040895457</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607040895457</updated>
+    </task>
+    <task id="LOCAL-00005" summary="practical-1 done">
+      <created>1607041256794</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607041256794</updated>
+    </task>
+    <task id="LOCAL-00006" summary="practical-2 done">
+      <created>1607042227117</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607042227117</updated>
+    </task>
+    <task id="LOCAL-00007" summary="practical-2 completed version">
+      <created>1607095532767</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607095532767</updated>
+    </task>
+    <task id="LOCAL-00008" summary="practical-3 done 100%">
+      <created>1607360294454</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607360294454</updated>
+    </task>
+    <task id="LOCAL-00009" summary="practical-3 done 50%">
+      <created>1607461229907</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607461229907</updated>
+    </task>
+    <task id="LOCAL-00010" summary="homework-3 done">
+      <created>1607462598713</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607462598713</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="clear" />
+    <MESSAGE value="first commit" />
+    <MESSAGE value="homework-1 done" />
+    <MESSAGE value="homework-2 done" />
+    <MESSAGE value="practical-1 done" />
+    <MESSAGE value="practical-2 done" />
+    <MESSAGE value="practical-2 completed version" />
+    <MESSAGE value="practical-3 done 100%" />
+    <MESSAGE value="practical-3 done 50%" />
+    <MESSAGE value="homework-3 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework-3 done" />
+  </component>
+</project>
