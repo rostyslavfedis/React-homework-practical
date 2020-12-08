@@ -4,25 +4,26 @@ import {CommentService} from "../services/CommentService";
 
 class AllComments extends Component {
 
-    commentService= new CommentService();
+    commentService = new CommentService();
 
-    state={coment:[], chosenComent:null };
+    state = {coment: [], chosenComent: null};
 
     componentDidMount() {
-        this.commentService.getAllComment().then(value=>this.setState({coment: value}))
+        this.commentService.getAllComment().then(value => this.setState({coment: value}))
     }
-    selectThisComent=(id)=>{
-        let chosenComent=this.state.coment.find(value=>value.id===id);
+
+    selectThisComent = (id) => {
+        let chosenComent = this.state.coment.find(value => value.id === id);
         this.setState({chosenComent});
     }
 
     render() {
-        let {coment, chosenComent}=this.state;
+        let {coment, chosenComent} = this.state;
         return (
             <div>
                 <h1>All Coments</h1>
                 {
-                    coment.map(value=>(<CommentComponent
+                    coment.map(value => (<CommentComponent
                         item={value}
                         key={value.id}
                         selectThisComent={this.selectThisComent}
