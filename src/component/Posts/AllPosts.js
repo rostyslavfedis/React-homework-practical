@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import PostService from "../../services/PostService";
-import User from "../Users/User";
 import Post from "./Post";
 
 class AllPosts extends Component {
@@ -14,6 +13,7 @@ class AllPosts extends Component {
 
     render() {
         let {posts} = this.state;
+        console.log(posts);
         return (
             <div>
                 {posts.map(value => <Post key={value.id} item={value}/>)}

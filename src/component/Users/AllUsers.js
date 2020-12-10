@@ -1,25 +1,35 @@
 import React, {Component} from 'react';
 import UserService from "../../services/UserService";
 import User from "./User";
-
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    withRouter
+} from "react-router-dom";
+import AllPosts from "../Posts/AllPosts";
 
 class AllUsers extends Component {
-    state={users:[]};
-    userService=new UserService();
 
-    async componentDidMount() {
-        let users=await this.userService.getAllUsers();
-        this.setState({users});
-    }
 
     render() {
-        let{users}=this.state;
+        let {match: {url}, users, showPosts} = this.props;
         return (
             <div>
-                {users.map(value => <User key={value.id} item={value}/>)}
+                {users.map(value => <User key={value.id} item={value} showPosts={showPosts}/>)}
+                <hr/>
+                <Switch>
+                    <Route path={url + '/:id'} render={() => {
+                        return <AllPosts/>;
+                    }}>
+
+                    </Route>
+                </Switch>
+                <hr/>
             </div>
         );
     }
 }
 
-export default AllUsers;
+export default withRouter(AllUsers);

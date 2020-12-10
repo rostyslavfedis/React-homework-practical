@@ -6,14 +6,23 @@ import {
     Link,
     withRouter
 } from "react-router-dom";
+import AllUsers from "./AllUsers";
+import AllPosts from "../Posts/AllPosts";
 
 class User extends Component {
+
     render() {
-        let {match:{url},item}=this.props;
+        let {match:{url},item, showPosts}=this.props;
         return (
+            <Router>
             <div>
-                {item.id}-{item.name}- <Link to={`${url}/${item.id}`}>change</Link>
+                {item.id}-{item.name}
+                <button onClick={()=> showPosts(item.id)}>Posts</button>
+                <Link to={url+'/'+ item.id}>posts</Link>
+
             </div>
+
+            </Router>
         );
     }
 }

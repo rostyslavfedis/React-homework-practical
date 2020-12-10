@@ -9,13 +9,13 @@ import {
 
 class Post extends Component {
     render() {
-        let {match:{url},item}=this.props;
+        let {item}=this.props;
         return (
             <div>
-                {item.id}-{item.title}-<Link to={`${url}/${item.id}`}>change</Link>
+                {item.id}-{item.title}
             </div>
         );
     }
 }
 
-export default withRouter(Post);
+export default Post;

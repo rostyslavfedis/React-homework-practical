@@ -7,26 +7,53 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import PostService from "./services/PostService";
+import UserService from "./services/UserService";
 
 class App extends Component {
+
+    state = {
+        users: [],
+        posts: [],
+        post: null
+    }
+
+    postService = new PostService()
+    userService = new UserService()
+
+    async componentDidMount() {
+        let posts = await this.postService.getAllPost();
+        this.setState({posts})
+
+        let users = await this.userService.getAllUsers();
+        this.setState({users})
+    }
+
+    showPosts = (id) => {
+        let arr = [];
+        let filter = this.state.posts.filter(p => p.userId === id);
+        arr.push(filter);
+        this.setState({post: arr})
+    }
+
     render() {
+        let {users, posts, post} = this.state;
+        console.log(post);
         return (
             <Router>
                 <div>
                     <div>
+                        <Link to={'/'}>
+                            home
+                        </Link>
                         <Link to={'/users'}>
                             users
                         </Link>
                     </div>
-                    <div>
-                        <Link to={'/posts'}>
-                            posts
-                        </Link>
-                    </div>
-                    <Switch>
-                        <Route path={'/users'} component={AllUsers}/>
 
-                        <Route path={'/posts'} component={AllPosts}/>
+                    <Switch>
+                        <Route path={'/users'} render={()=> <AllUsers users={users} posts={posts} showPosts={this.showPosts}/>}/>
+                        <Route path={'/'} component={() => <h1>asd</h1>}/>
                     </Switch>
 
                 </div>
@@ -34,5 +61,6 @@ class App extends Component {
         );
     }
 }
+
 
 export default App;
