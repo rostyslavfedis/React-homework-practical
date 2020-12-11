@@ -21,9 +21,16 @@ class FullUser extends Component {
         let{user}=this.state;
 
         return (
-            <div>
+            <div className={'details-user'}>
 
-                {user && <div>{user.id}-{user.name}-{user.body}-{user.email}</div>}
+                {user && <div>
+                    {user.name}<br/> <hr/>
+                    {user.username}<br/> <hr/>
+                    {user.phone}<br/> <hr/>
+                    {user.email}<br/> <hr/>
+                    {user.website}<br/> <hr/>
+
+                </div>}
             </div>
         );
     }

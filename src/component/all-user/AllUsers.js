@@ -6,6 +6,7 @@ import {
     Link,
     withRouter
 } from "react-router-dom";
+import './AllUsers.css'
 import UserService from "../../services/UserService";
 import User from "../user/User";
 import FullUser from "../full-user/FullUser";
@@ -25,20 +26,21 @@ class AllUsers extends Component {
         let {users} = this.state;
         let {match: {url}} = this.props;
         return (
-            <div>
+            <div className={'all-user-item'}>
+                <div className={'user-block'}>
                 {
                     users.map(value => <User item={value} key={value.id}/>)
                 }
+                </div>
 
-
-                <hr/>
+                <div className={'full-users-main'}>
                 <Switch>
                     <Route path={url + '/:id'} render={(props) => {
                         let {match: {params: {id}}} = props;
                         return <FullUser id={id} key={id}/>
                     }}/>
                 </Switch>
-                <hr/>
+                </div>
             </div>
         );
     }

@@ -7,28 +7,12 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import Header from "./component/header/Header";
 class App extends Component {
     render() {
 
         return (
-            <Router>
-                <div>
-                    <div>
-                        <Link to={'/'}>
-                            home
-                        </Link>
-                        <Link to={'/users'}>
-                            users
-                        </Link>
-                    </div>
-
-                    <Switch>
-                        <Route path={'/users'} render={()=> <AllUsers />}/>
-                        <Route path={'/'}/>
-                    </Switch>
-
-                </div>
-            </Router>
+          <Header/>
         );
     }
 }
