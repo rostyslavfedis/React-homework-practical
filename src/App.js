@@ -53,7 +53,7 @@ class App extends Component {
 
                     <Switch>
                         <Route path={'/users'} render={()=> <AllUsers users={users} posts={posts} showPosts={this.showPosts}/>}/>
-                        <Route path={'/'} component={() => <h1>asd</h1>}/>
+                        <Route path={'/'}/>
                     </Switch>
 
                 </div>
