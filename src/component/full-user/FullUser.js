@@ -23,12 +23,12 @@ class FullUser extends Component {
         return (
             <div className={'details-user'}>
 
-                {user && <div>
-                    {user.name}<br/> <hr/>
-                    {user.username}<br/> <hr/>
-                    {user.phone}<br/> <hr/>
-                    {user.email}<br/> <hr/>
-                    {user.website}<br/> <hr/>
+                {user && <div className={'relative'}>
+                   <div className={'name'}>{user.name}</div>
+                    <div className={'username'}>{user.username} </div><hr/>
+                    <div className="phone"><span className={'title'}>Phone: </span>{user.phone}</div><hr/>
+                    <div className="email"><span className={'title'}>Email: </span>{user.email}</div> <hr/>
+                    <div className="website"><span className={'title'}>Website: </span>{user.website}</div>
 
                 </div>}
             </div>
