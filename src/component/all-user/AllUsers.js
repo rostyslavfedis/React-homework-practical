@@ -24,12 +24,12 @@ class AllUsers extends Component {
     render() {
 
         let {users} = this.state;
-        let {match: {url}, showPosts} = this.props;
+        let {match: {url}} = this.props;
         return (
             <div className={'all-user-item'}>
                 <div className={'user-block'}>
                 {
-                    users.map(value => <User item={value} key={value.id} showPosts={showPosts}/>)
+                    users.map(value => <User item={value} key={value.id} />)
                 }
                 </div>
 

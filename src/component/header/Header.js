@@ -46,7 +46,7 @@ class Header extends Component {
                         </div>
                         </div>
                         <Switch>
-                            <Route path={'/users'} render={()=> <AllUsers  posts={posts} showPosts={this.showPosts}/>}/>
+                            <Route path={'/users'} render={()=> <AllUsers/>}/>
                             <Route path={'/'}/>
                         </Switch>
                     </Router>

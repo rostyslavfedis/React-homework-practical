@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Header from "./component/header/Header";
-import {PostService} from "./services/PostService";
+import Post from "./component/post/Post";
 class App extends Component {
 
     render() {
@@ -8,6 +8,10 @@ class App extends Component {
         return (
             <div>
                 <Header/>
+                <div>
+                    <Post/>
+                </div>
+
             </div>
 
         );
