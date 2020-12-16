@@ -32,12 +32,15 @@ h1,h2{
     border-radius: 3px;
 
 }
-.post{
+.button-post{
     color:black;
     background-color: #04890e;
     padding: 5px;
+    width: 50px;
     border-radius: 3px;
-    margin-left: 5px;
+}
+.button-posts{
+    margin-top: 10px;
 }
 h2{
     opacity: 80%;
@@ -78,4 +81,14 @@ position: relative;
 }
 .phone, .email, .website{
     font-size: 23px;
+}
+.all-posts{
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 5px;
+}
+.tag{
+    font-weight: bolder;
+
 }
