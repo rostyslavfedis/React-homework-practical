@@ -1,0 +1,30 @@
+.UP{
+    background-color: green;
+}
+.DOWN{
+    background-color: red;
+}
+.RESET{
+    background-color: yellow;
+}
+button{
+    margin-left: 20px;
+}
+h2{
+    color: white;
+    margin: 30px;
+}
+
+.Counter{
+    background-color: #000;
+    width: 300px;
+    height: 100px;
+}
+.Users{
+    background-color: #000;
+    width: 300px;
+    height: 300px;
+}
+h3{
+    color: white;
+}
