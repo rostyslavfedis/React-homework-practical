@@ -2,48 +2,57 @@ import React, {useState, useEffect, useReducer} from 'react';
 import './App.css';
 
 export default function App() {
-    const [counter, setCounter] = useState(1)
-    const [user, setUser] = useState()
+    const [counter, setCounter] = useState(0)
 
-    useEffect(()=>{
-        fetch(`https://jsonplaceholder.typicode.com/users/${counter}`)
-            .then(response => response.json())
-            .then(json => setUser(json))
-    },[counter])
 
     const increment = () => {
-        setCounter(prevState=>prevState + 1);
+        setCounter(prevState => prevState + 1);
+    }
+    const incrementHundred = () => {
+        setCounter(prevState => prevState + 100);
     }
     const decrement = () => {
-        setCounter(prevState=>prevState - 1);
+        setCounter(prevState => prevState - 1);
     }
-    const reset=()=>{
-        setCounter(1)
+    const decrementHundred = () => {
+        setCounter(prevState => prevState - 100);
+    }
+    const reset = () => {
+        setCounter(0)
+    }
+    const form1Handler = (e) => {
+        e.preventDefault();
+        const num = e.target[0].value;
+        const parse= Number(num);
+        console.log(num);
+        setCounter(prevState => prevState+parse);
     }
     return (
         <div className="App">
 
             <div className="Counter">
-                <h2>Counter value: {counter}</h2>
-                <button className={"UP"} onClick={increment}>UP</button>
-            <button className={"DOWN"} onClick={decrement}>DOWN</button>
-            <button className={"RESET"} onClick={reset}>RESET</button>
+                <div className="calculator">Calculator</div>
+                <h2>{counter}</h2>
+                <div className="UPDOWN">
+                    <button className={"UP"} onClick={increment}>1</button>
+                    <button className={"DOWN"} onClick={decrement}>-1</button>
+                </div>
+                <div className="UPDOWNHUNDRED">
+                    <button className={"UPhundred"} onClick={incrementHundred}>100</button>
+                    <button className={"DOWNhundred"} onClick={decrementHundred}>-100</button>
+                </div>
+                <div className="RESETDIV">
+                <button className={"RESET"} onClick={reset}>RESET</button>
+                </div>
+                <div className={'FORMA'}>
+                    <form className={'myform'} onSubmit={form1Handler}>
+                        <input className={'input'} type="number"/>
+                        <button className={'submit'}>Submit</button>
+                    </form>
+                </div>
             </div>
 
-            <div className="Users">
-                <h2>USERS FROM API</h2>
 
-                {!!user &&(
-                    <>
-                    <h3>id: {user.id}</h3>
-                    <h3>name: {user.name}</h3>
-                    <h3>username: {user.username}</h3>
-                    <h3>phone: {user.phone}</h3>
-                    <h3>website: {user.website}</h3>
-                    </>
-                    )
-                }
-            </div>
         </div>
     )
 
