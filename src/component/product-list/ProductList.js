@@ -4,16 +4,20 @@ import {useSelector, useDispatch} from 'react-redux'
 import {toggleItemInCart, toggleItemInWishlist} from '../../redux/action-creators'
 
 export const ProductList = ({products}) => {
+    
     const dispatch = useDispatch();
     const wishlist = useSelector(({wishlist: {wishlist}}) => wishlist);
     const cart = useSelector(({cart: {cart}}) => cart);
+    
     const onAddToCart = (product) => {
         dispatch(toggleItemInCart(product))
     }
+    
     const onAddToWishlist = (product) => {
         dispatch(toggleItemInWishlist(product))
 
     }
+    
     return (
         <div>
             {products.map((product) => (
