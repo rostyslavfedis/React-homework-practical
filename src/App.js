@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {useDispatch, useSelector} from "react-redux";
 
+
 export default function App () {
     const dispatch = useDispatch();
     const store = useSelector((store) => store);
@@ -17,6 +18,9 @@ export default function App () {
     const selectHandler = (e) => {
         dispatch({type: 'DELETE_USER', payload: e.target.value})
     }
+    const editHandler =(e)=>{
+    dispatch({type:'EDIT_USER', payload: e.target.value})
+    }
 
     return (
         <div>
@@ -25,11 +29,16 @@ export default function App () {
                 <input type="number"/>
                 <button>Submit</button>
             </form>
-            <form>
-                <select onChange={selectHandler}>
-                    {store.map(user => <option onClick={selectHandler} value={user.id}>{user.name}</option>)}
-                </select>
-            </form>
+
+                <div>
+                    {store.map(user =>
+                    <div>Name: {user.name}
+                    <br/>Age: {user.age}
+                    <br/><button onClick={selectHandler} value={user.id}>delete</button>
+                    <button onClick={editHandler}>edit</button>
+                    </div>)}
+                </div>
+
         </div>
     );
 }

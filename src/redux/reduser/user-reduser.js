@@ -8,6 +8,9 @@ export const reducer = (state = initialState, action) => {
         case 'DELETE_USER': {
             return state.filter((user) => user.id !== +action.payload);
         }
+        case 'EDIT_USER': {
+            return [...state, action.payload ]
+        }
         default: {
             return state;
         }
